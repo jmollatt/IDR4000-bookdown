@@ -99,7 +99,9 @@ For å sammenligne hvilken effekt styrketrening med kun ett enkeltsett kontra fl
 
 ## Resultater
 
-#### Muskelmasse
+#### Fettfri masse
+ 
+Etter å ha justert for kjønn og baselineverdier ser man at det beinet deltakerne brukte til å trene flere sett gjennomsnitt økt den fettfrie massen med 123,5 gram mer(SD 55.17 gram, 95% CI), enn beinet som gjennomførte kun ett sett. Gjennomsnittlig prosentvis endring i fra baselinetesting til fullført intervensjon er vist i Tabell 2.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # TABELL FOR ØKNING FETTFRI MASSE PRE TIL POST FORDELT PÅ SETT 
@@ -130,6 +132,30 @@ tabell_lbmleg
 
 # Deltakerne i gruppen med flere sett var det i gjennomsnitt en 3,36%(SD 4,5) økning i muskelmasse i beina fra baseline til etter intervensjon. I gruppen med enkeltsett var det i gjennomsnitt en økning på 2.05%(SD 3,6) fra baseline til etter intervensjonen var avsluttet.
 ```
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap= "Figur 1 viser forskjell i fettfri masse fra pre-test til post-test for samtlige deltakere fordelt på kjønn"}
+plotdata <- dxadata %>%
+  select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.legs", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sets, sex, leg, lean.legs) %>%
+  group_by(participant) %>%
+  mutate(n = n(), group = factor(sets, levels = c("single", "multiple")), time = factor(time, levels = c("pre", "post")))
+plotdata %>%
+ggplot(aes(sets, lean.legs, group = participant, time, color = sex)) + geom_line() + theme() +
+
+labs(x = "Intervensjon",
+     y = "Fettfri masse (gram)")
+```
+
+
+#### Styrke
+
+Etter å ha justert for verdier ved baseline og kjønn så man at beinet som har gjennomført trening med enkeltsett hadde en signifikant lavere styrke etter avsluttet intervensjon enn beinet som hadde gjennomført trening med flersett. Fremgangen er målt i skalert motstand, som er motstand som en andel av maks. I skalert motstand hadde beinet med enkeltsett gjennomsnittlig 0.029kg (95% CI) lavere verdier etter endt intervensjon enn beinet med flersett.
+
+Gjennomsnittlig prosentvis endring i muskelstyrke fra baselinetesting til fullført intervensjon er vist i Tabell 3.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #TABELL ENDRING I MUSKELSTYRKE
@@ -159,35 +185,7 @@ tabell_strengthchange
 #Målt i ren prosentvis gjennomsnittlig fremgang hadde gruppen med flersett 31% (SD 14.2) fremgang fra baseline til etter intervensjon, mens gruppen med enkeltsett hadde 24.5% (SD 12.9) fremgang fra baseline til intervensjonen var avsluttet. 
 ```
 
-Etter å ha justert for kjønn og baselineverdier ser man at det beinet deltakerne brukte til å trene flere sett gjennomsnitt økt muskelmassen med 123,5 gram mer(SD 55.17 gram, 95% CI), enn beinet som gjennomførte kun ett sett. Gjennomsnittlig prosentvis endring i fra baselinetesting til fullført intervensjon er vist i Tabell 2.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap= "Figur 1 viser økning i fettfri masse fra pre-test til post-test for samtlige deltakere}
-plotdata <- dxadata %>%
-  select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
-  pivot_longer(names_to = "leg", 
-               values_to = "lean.legs", 
-               cols = lean.left_leg:lean.right_leg) %>%
-  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
-         sets = if_else(multiple == leg, "multiple", "single")) %>%
-  select(participant, time, sets, sex, leg, lean.legs) %>%
-  group_by(participant) %>%
-  mutate(time = factor(time, levels = c("pre", "post"), labels = c("Pre-test", "Post-Test")), 
-         sets = factor(sets, levels = c("single", "multiple"), labels = c("Enkeltsett", "Flersett"))) %>% 
-
-ggplot(aes(time, lean.legs, group = paste(participant, group), color = group)) + geom_line() + theme_minimal() + 
-   labs(x = "Tidspunkt",
-       y = " Fettfri masse bein (gram)",
-        color = "Intervensjon")
-```
-
-#### Styrke
-
-Etter å ha justert for verdier ved baseline og kjønn så man at beinet som har gjennomført trening med enkeltsett hadde en signifikant lavere styrke etter avsluttet intervensjon enn beinet som hadde gjennomført trening med flersett. Fremgangen er målt i skalert motstand, som er motstand som en andel av maks. I skalert motstand hadde beinet med enkeltsett gjennomsnittlig 0.029kg (95% CI) lavere verdier etter endt intervensjon enn beinet med flersett.
-
-Gjennomsnittlig prosentvis endring i muskelstyrke fra baselinetesting til fullført intervensjon er vist i Tabell 3.
-
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap= "Figur 2 viser gjennomsnittlig belastning på styrketester ved pre-test of post-test for de ulike treningsintervensjonene}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap= "Figur 2 viser gjennomsnittlig belastning på styrketester ved pre-test of post-test for de ulike treningsintervensjonene"}
 strengthvolume %>%
   filter(exercise == "legext", time %in% c("pre", "post")) %>%
   group_by(sets, time) %>%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 17:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1507,7 +1507,7 @@ Package fontspec Info: Font family 'Helvetica(0)' created for font 'Helvetica'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/Helvetica(0)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 442.
+(Font)              scaled to size 11.0pt on input line 450.
 
 Package fontspec Info: Helvetica scale = 0.9999973374868539.
 
@@ -1544,11 +1544,37 @@ Package fontspec Info: Font family 'Helvetica(1)' created for font 'Helvetica'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/Helvetica(1)/m/n on input line 442.
+(Font)                  TU/lmr/m/n --> TU/Helvetica(1)/m/n on input line 450.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmr/m/it --> TU/Helvetica(1)/m/it on input line 442.
+(Font)                  TU/lmr/m/it --> TU/Helvetica(1)/m/it on input line 450.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmr/bx/n --> TU/Helvetica(1)/b/n on input line 442.
+(Font)                  TU/lmr/bx/n --> TU/Helvetica(1)/b/n on input line 450.
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+
+Package fontspec Info: Helvetica scale = 0.8272588095903724.
+
+File: _main_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-8-1.pdf>
 
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
@@ -1576,113 +1602,31 @@ Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
-<use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
 [29]
+File: _main_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf)
+<use _main_files/figure-latex/unnamed-chunk-10-1.pdf>
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
-
-
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 552.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `munn2005' on page 30 undefined on input line 552.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `fröhlich2010' on page 30 undefined on input line 552.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 552.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `carpinelli1998' on page 30 undefined on input line 554.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `radaelli2014' on page 30 undefined on input line 554.
 
 
-Package fontspec Info: Helvetica scale = 0.8272588095903724.
+Package natbib Warning: Citation `hass2000' on page 30 undefined on input line 554.
 
-
-Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 638.
-
-
-Package natbib Warning: Citation `munn2005' on page 30 undefined on input line 638.
-
-
-Package natbib Warning: Citation `fröhlich2010' on page 30 undefined on input line 638.
-
-
-Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 638.
-
-
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
-[30]
-
-Package natbib Warning: Citation `carpinelli1998' on page 31 undefined on input line 640.
-
-
-Package natbib Warning: Citation `radaelli2014' on page 31 undefined on input line 640.
-
-
-Package natbib Warning: Citation `hass2000' on page 31 undefined on input line 640.
-
-(./_main.bbl [31] [32
+[30] [31] [32] (./_main.bbl [33] [34
 
 ]
 
@@ -1692,17 +1636,17 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 Package natbib Warning: There were undefined citations.
 
-[33] (./_main.aux)
+[35] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: D8DA8F3F4E4DA32AAFDE74A8F5EBA721;2772.
  ) 
 Here is how much of TeX's memory you used:
- 19193 strings out of 478256
- 350874 string characters out of 5854709
- 824850 words of memory out of 5000000
- 39406 multiletter control sequences out of 15000+600000
+ 19201 strings out of 478256
+ 351312 string characters out of 5854709
+ 825061 words of memory out of 5000000
+ 39413 multiletter control sequences out of 15000+600000
  410091 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,7n,128p,2614b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (33 pages).
+Output written on _main.pdf (35 pages).
