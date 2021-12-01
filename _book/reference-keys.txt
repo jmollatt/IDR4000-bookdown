@@ -40,6 +40,7 @@ statistiske-analyser
 resultater-2
 muskelmasse
 styrke
+diskusjon-1
 konklusjon
 kommentar
 kommentar-fra-daniel

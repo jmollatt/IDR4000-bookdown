@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 16:34
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1658,9 +1658,31 @@ Package fontspec Info: Helvetica scale = 0.8272588095903724.
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
 
+Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 638.
+
+
+Package natbib Warning: Citation `munn2005' on page 30 undefined on input line 638.
+
+
+Package natbib Warning: Citation `fröhlich2010' on page 30 undefined on input line 638.
+
+
+Package natbib Warning: Citation `rhea2002' on page 30 undefined on input line 638.
+
+
 Underfull \vbox (badness 1067) has occurred while \output is active []
 
-[30] (./_main.bbl [31] [32
+[30]
+
+Package natbib Warning: Citation `carpinelli1998' on page 31 undefined on input line 640.
+
+
+Package natbib Warning: Citation `radaelli2014' on page 31 undefined on input line 640.
+
+
+Package natbib Warning: Citation `hass2000' on page 31 undefined on input line 640.
+
+(./_main.bbl [31] [32
 
 ]
 
@@ -1675,10 +1697,10 @@ Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: D8DA8F3F4E4DA32AAFDE74A8F5EBA721;2772.
  ) 
 Here is how much of TeX's memory you used:
- 19192 strings out of 478256
- 350861 string characters out of 5854709
- 824806 words of memory out of 5000000
- 39405 multiletter control sequences out of 15000+600000
+ 19193 strings out of 478256
+ 350874 string characters out of 5854709
+ 824850 words of memory out of 5000000
+ 39406 multiletter control sequences out of 15000+600000
  410091 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,7n,128p,2614b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
