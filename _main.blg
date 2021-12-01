@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: _main.aux
+The style file: plainnat.bst
+Database file #1: book.bib
+Database file #2: packages.bib
+Warning--I didn't find a database entry for "bassett2000"
+Warning--I didn't find a database entry for "hill1923"
+Warning--I didn't find a database entry for "tønnessen2017"
+Warning--I didn't find a database entry for "halperin2015"
+Warning--I didn't find a database entry for "borg1982"
+Warning--I didn't find a database entry for "hopkins2000"
+Warning--I didn't find a database entry for "clark2007"
+Warning--I didn't find a database entry for "robertson2010"
+Warning--I didn't find a database entry for "saunders2009"
+Warning--I didn't find a database entry for "ekstrand2011"
+Warning--I didn't find a database entry for "hickey2014"
+Warning--I didn't find a database entry for "eirale2013"
+Warning--I didn't find a database entry for "hickey2020"
+Warning--I didn't find a database entry for "askling2014"
+Warning--I didn't find a database entry for "hamilton2015"
+Warning--I didn't find a database entry for "ahamid2014"
+Warning--I didn't find a database entry for "askling2013"
+Warning--I didn't find a database entry for "brooks2006"
+Warning--I didn't find a database entry for "horst2017"
+Warning--I didn't find a database entry for "opar2012"
+Warning--I didn't find a database entry for "podlog2014"
+Warning--I didn't find a database entry for "hulley2013"
+Warning--I didn't find a database entry for "hulley2017"
+Warning--I didn't find a database entry for "jones2004"
+Warning--I didn't find a database entry for "turner2018"
+Warning--I didn't find a database entry for "goel2010"
+Warning--I didn't find a database entry for "fink2006"
+Warning--I didn't find a database entry for "nielsen2018"
+Warning--I didn't find a database entry for "akram2016"
+Warning--I didn't find a database entry for "cirer-sastre2017"
+Warning--I didn't find a database entry for "lovell2017"
+Warning--I didn't find a database entry for "suetta2007"
+Warning--I didn't find a database entry for "rhea2002"
+Warning--I didn't find a database entry for "marshall2011"
+Warning--I didn't find a database entry for "schoenfeld2019"
+Warning--I didn't find a database entry for "munn2005"
+Warning--I didn't find a database entry for "fröhlich2010"
+Warning--I didn't find a database entry for "carpinelli1998"
+You've used 0 entries,
+            2773 wiz_defined-function locations,
+            631 strings with 5243 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 7
+(There were 38 warnings)

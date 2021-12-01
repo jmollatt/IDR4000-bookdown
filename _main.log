@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 14:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.1)  1 DEC 2021 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,40 +559,40 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 141.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 141.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 141.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 141.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 141.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 141.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 142.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 141.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 142.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -618,7 +618,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 141.
+(Font)              scaled to size 10.0pt on input line 142.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -650,15 +650,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 141.
+(Font)              scaled to size 10.0pt on input line 142.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 141.
+(Font)              `operators' in the math version `normal' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 141.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 142.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 141.
+(Font)              `operators' in the math version `bold' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 141.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 142.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -737,13 +737,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 141.
+(Font)              `symbols' in the math version `normal' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 141.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 142.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 141.
+(Font)              `symbols' in the math version `bold' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 141.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 142.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -804,14 +804,14 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 141.
+(Font)              `largesymbols' in the math version `normal' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 141.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 142.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 141.
+(Font)              `largesymbols' in the math version `bold' on input line 142.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 141.
-Package hyperref Info: Link coloring OFF on input line 141.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 142.
+Package hyperref Info: Link coloring OFF on input line 142.
 (/Users/jacobmollatt/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/jacobmollatt/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -821,40 +821,40 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 142.
+LaTeX Info: Redefining \pageref on input line 142.
+LaTeX Info: Redefining \nameref on input line 142.
 (./_main.out) (./_main.out)
 \@outlinefile=\write4
 \openout4 = `_main.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 143.
+(Font)              scaled to size 12.0pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 143.
+(Font)              scaled to size 8.0pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 143.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 143.
+(Font)              scaled to size 6.0pt on input line 144.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 144.
 (/Users/jacobmollatt/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 143.
+(Font)              scaled to size 12.0011pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 143.
+(Font)              scaled to size 8.00073pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 143.
+(Font)              scaled to size 6.00055pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 143.
+(Font)              scaled to size 11.99872pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 143.
+(Font)              scaled to size 7.99915pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 143.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
+(Font)              scaled to size 5.99936pt on input line 144.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 144.
 (/Users/jacobmollatt/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 144.
 (/Users/jacobmollatt/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -890,82 +890,82 @@ Chapter 1.
 ] [6]
 Chapter 2.
 
-Package natbib Warning: Citation `bassett2000' on page 7 undefined on input line 202.
+Package natbib Warning: Citation `bassett2000' on page 7 undefined on input line 203.
 
 
-Package natbib Warning: Citation `hill1923' on page 7 undefined on input line 202.
+Package natbib Warning: Citation `hill1923' on page 7 undefined on input line 203.
 
 
-Package natbib Warning: Citation `bassett2000' on page 7 undefined on input line 202.
+Package natbib Warning: Citation `bassett2000' on page 7 undefined on input line 203.
 
 
-Package natbib Warning: Citation `tønnessen2017' on page 7 undefined on input line 202.
+Package natbib Warning: Citation `tønnessen2017' on page 7 undefined on input line 203.
 
 
-Package natbib Warning: Citation `tønnessen2017' on page 7 undefined on input line 202.
+Package natbib Warning: Citation `tønnessen2017' on page 7 undefined on input line 203.
 
 
-Package natbib Warning: Citation `halperin2015' on page 7 undefined on input line 207.
+Package natbib Warning: Citation `halperin2015' on page 7 undefined on input line 208.
 
 
-Package natbib Warning: Citation `borg1982' on page 7 undefined on input line 209.
+Package natbib Warning: Citation `borg1982' on page 7 undefined on input line 210.
 
 [7
 
 ]
 
-Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 211.
+Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 212.
 
 
-Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 211.
+Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 212.
 
 
-Package natbib Warning: Citation `tønnessen2017' on page 8 undefined on input line 211.
+Package natbib Warning: Citation `tønnessen2017' on page 8 undefined on input line 212.
 
 
-Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 211.
+Package natbib Warning: Citation `halperin2015' on page 8 undefined on input line 212.
 
 
-Package natbib Warning: Citation `borg1982' on page 8 undefined on input line 213.
+Package natbib Warning: Citation `borg1982' on page 8 undefined on input line 214.
 
 
-Package natbib Warning: Citation `hopkins2000' on page 8 undefined on input line 220.
+Package natbib Warning: Citation `hopkins2000' on page 8 undefined on input line 221.
 
 File: _main_files/figure-latex/Figur-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/Figur-1.pdf>
 
-Package natbib Warning: Citation `hopkins2000' on page 8 undefined on input line 231.
+Package natbib Warning: Citation `hopkins2000' on page 8 undefined on input line 232.
 
 [8]
 
-Package natbib Warning: Citation `halperin2015' on page 9 undefined on input line 233.
+Package natbib Warning: Citation `halperin2015' on page 9 undefined on input line 234.
 
 [9]
 
-Package natbib Warning: Citation `hopkins2000' on page 10 undefined on input line 235.
+Package natbib Warning: Citation `hopkins2000' on page 10 undefined on input line 236.
 
 
-Package natbib Warning: Citation `hopkins2000' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `hopkins2000' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `halperin2015' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `halperin2015' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `clark2007' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `clark2007' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `robertson2010' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `robertson2010' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `saunders2009' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `saunders2009' on page 10 undefined on input line 238.
 
 
-Package natbib Warning: Citation `halperin2015' on page 10 undefined on input line 237.
+Package natbib Warning: Citation `halperin2015' on page 10 undefined on input line 238.
 
 [10]
 Chapter 3.
 
-Underfull \hbox (badness 1546) in paragraph at lines 252--253
+Underfull \hbox (badness 1546) in paragraph at lines 253--254
 \TU/lmr/m/n/10 KvantMet2021 Vitenskapelige argument.pdf: IDR4000-1 21H Kvantitativ
  []
 
@@ -979,310 +979,497 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
 ]
 Chapter 4.
 
-Package natbib Warning: Citation `ekstrand2011' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `ekstrand2011' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `hickey2014' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `hickey2014' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `eirale2013' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `eirale2013' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `hickey2020' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `hickey2020' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `askling2014' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `askling2014' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `hamilton2015' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `ahamid2014' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `ahamid2014' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `askling2013' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `askling2013' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `askling2014' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `askling2014' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `askling2013' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `askling2013' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `hickey2020' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `hickey2020' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `ahamid2014' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `ahamid2014' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 17 undefined on input line 282.
+Package natbib Warning: Citation `hamilton2015' on page 17 undefined on input line 283.
 
 
-Package natbib Warning: Citation `ekstrand2011' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `ekstrand2011' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `hickey2014' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `hickey2014' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `eirale2013' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `eirale2013' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `brooks2006' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `brooks2006' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `horst2017' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `horst2017' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `opar2012' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `opar2012' on page 17 undefined on input line 285.
 
 
-Package natbib Warning: Citation `podlog2014' on page 17 undefined on input line 284.
+Package natbib Warning: Citation `podlog2014' on page 17 undefined on input line 285.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17]
 
-Package natbib Warning: Citation `askling2014' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `askling2014' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `askling2013' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `askling2013' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `ahamid2014' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `ahamid2014' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hulley2013' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `hulley2013' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 291.
+Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 292.
 
 
-Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 293.
+Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 294.
 
 
-Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 293.
+Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 294.
 
 
-Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 293.
+Package natbib Warning: Citation `hulley2017' on page 18 undefined on input line 294.
 
 
-Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 295.
+Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 296.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 295.
+Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 296.
 
 
-Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 295.
+Package natbib Warning: Citation `hickey2020' on page 18 undefined on input line 296.
 
 
-Package natbib Warning: Citation `ahamid2014' on page 18 undefined on input line 295.
+Package natbib Warning: Citation `ahamid2014' on page 18 undefined on input line 296.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 295.
+Package natbib Warning: Citation `hamilton2015' on page 18 undefined on input line 296.
 
 
-Package natbib Warning: Citation `jones2004' on page 18 undefined on input line 297.
+Package natbib Warning: Citation `jones2004' on page 18 undefined on input line 298.
 
 
-Package natbib Warning: Citation `turner2018' on page 18 undefined on input line 297.
+Package natbib Warning: Citation `turner2018' on page 18 undefined on input line 298.
 
 [18]
-Underfull \hbox (badness 1521) in paragraph at lines 299--300
+Underfull \hbox (badness 1521) in paragraph at lines 300--301
 []\TU/lmr/m/n/10 Alle studiene sammenlignet ulike rehabiliteringsmetoder av akutte ham-
  []
 
-[19]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 306.
-
-
-Overfull \hbox (3118.50017pt too wide) in paragraph at lines 307--323
-[][] 
+Overfull \hbox (33.11879pt too wide) in paragraph at lines 310--310
+[]|\TU/lmr/m/n/10 Forfatter|  
  []
 
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ^^B (U+0002) in font [latinmodern-math.otf]/OT:script=math;language=dflt;!
-[20
 
-]
+Overfull \hbox (6.08948pt too wide) in paragraph at lines 310--310
+[]|\TU/lmr/m/n/10 Utvalg|  
+ []
 
-Package natbib Warning: Citation `askling2013' on page 21 undefined on input line 336.
 
+Overfull \hbox (2.84843pt too wide) in alignment at lines 308--312
+ [] [] [] [] [] [] 
+ []
 
-Package natbib Warning: Citation `askling2014' on page 21 undefined on input line 336.
 
+Overfull \hbox (25.40878pt too wide) in paragraph at lines 313--313
+[]|\TU/lmr/m/n/10 Hickey, 
+ []
 
-Package natbib Warning: Citation `askling2013' on page 21 undefined on input line 336.
 
+Overfull \hbox (14.29878pt too wide) in paragraph at lines 313--313
+\TU/lmr/m/n/10 2020|  
+ []
 
-Package natbib Warning: Citation `askling2014' on page 21 undefined on input line 336.
 
+Overfull \hbox (1.08948pt too wide) in paragraph at lines 313--313
+\TU/lmr/m/n/10 menn 
+ []
 
-Package natbib Warning: Citation `hickey2020' on page 21 undefined on input line 336.
 
+Overfull \hbox (0.81947pt too wide) in paragraph at lines 313--313
+\TU/lmr/m/n/10 akutt 
+ []
 
-Package natbib Warning: Citation `ahamid2014' on page 21 undefined on input line 336.
 
+Overfull \hbox (3.89948pt too wide) in paragraph at lines 313--313
+\TU/lmr/m/n/10 dager.|  
+ []
 
-Package natbib Warning: Citation `hamilton2015' on page 21 undefined on input line 336.
 
+Overfull \hbox (29.91878pt too wide) in paragraph at lines 317--317
+[]|\TU/lmr/m/n/10 Askling, 
+ []
 
-Package natbib Warning: Citation `goel2010' on page 21 undefined on input line 336.
 
+Overfull \hbox (14.29878pt too wide) in paragraph at lines 317--317
+\TU/lmr/m/n/10 2013|  
+ []
 
-Package natbib Warning: Citation `fink2006' on page 21 undefined on input line 336.
 
+Overfull \hbox (7.83948pt too wide) in paragraph at lines 317--317
+\TU/lmr/m/n/10 spillere 
+ []
 
-Package natbib Warning: Citation `nielsen2018' on page 21 undefined on input line 336.
 
+Overfull \hbox (0.81947pt too wide) in paragraph at lines 317--317
+\TU/lmr/m/n/10 akutt 
+ []
 
-Package natbib Warning: Citation `akram2016' on page 21 undefined on input line 336.
 
+Overfull \hbox (3.89948pt too wide) in paragraph at lines 317--317
+\TU/lmr/m/n/10 dager.|  
+ []
 
-Package natbib Warning: Citation `hickey2020' on page 21 undefined on input line 336.
 
+Overfull \hbox (42.01965pt too wide) in paragraph at lines 317--317
+[]|\TU/lmr/m/n/10 Rehabiliteringsprotokoll 
+ []
 
-Package natbib Warning: Citation `ahamid2014' on page 21 undefined on input line 336.
 
+Overfull \hbox (42.01965pt too wide) in paragraph at lines 318--318
+[]|\TU/lmr/m/n/10 Rehabiliteringsprotokoll 
+ []
 
-Package natbib Warning: Citation `hamilton2015' on page 21 undefined on input line 336.
 
+Overfull \hbox (29.91878pt too wide) in paragraph at lines 319--319
+[]|\TU/lmr/m/n/10 Askling, 
+ []
 
-Package natbib Warning: Citation `askling2013' on page 21 undefined on input line 341.
 
+Overfull \hbox (14.29878pt too wide) in paragraph at lines 319--319
+\TU/lmr/m/n/10 2014|  
+ []
 
-Package natbib Warning: Citation `askling2014' on page 21 undefined on input line 341.
 
+Overfull \hbox (23.39948pt too wide) in paragraph at lines 319--319
+\TU/lmr/m/n/10 idrettsutø- 
+ []
 
-Package natbib Warning: Citation `hickey2020' on page 21 undefined on input line 341.
 
+Overfull \hbox (0.81947pt too wide) in paragraph at lines 319--319
+\TU/lmr/m/n/10 akutt 
+ []
 
-Package natbib Warning: Citation `ahamid2014' on page 21 undefined on input line 341.
 
+Overfull \hbox (3.89948pt too wide) in paragraph at lines 319--319
+\TU/lmr/m/n/10 dager.|  
+ []
 
-Package natbib Warning: Citation `hamilton2015' on page 21 undefined on input line 341.
 
+Overfull \hbox (42.01965pt too wide) in paragraph at lines 319--319
+[]|\TU/lmr/m/n/10 Rehabiliteringsprotokoll 
+ []
 
-Package natbib Warning: Citation `hickey2020' on page 21 undefined on input line 344.
 
+Overfull \hbox (42.01965pt too wide) in paragraph at lines 320--320
+[]|\TU/lmr/m/n/10 Rehabiliteringsprotokoll 
+ []
 
-Package natbib Warning: Citation `askling2013' on page 21 undefined on input line 349.
 
-[21
+Overfull \hbox (26.24878pt too wide) in paragraph at lines 321--321
+[]|\TU/lmr/m/n/10 Hamid, 
+ []
 
-]
 
-Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 354.
+Overfull \hbox (14.29878pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 2014|  
+ []
 
 
-Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 359.
+Overfull \hbox (9.19948pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 sjonelle 
+ []
 
 
-Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 364.
+Overfull \hbox (0.81947pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 akutt 
+ []
 
 
-Package natbib Warning: Citation `askling2013' on page 22 undefined on input line 371.
+Overfull \hbox (1.11948pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 dager|  
+ []
 
 
-Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 371.
+Overfull \hbox (17.39174pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 intervensjons- 
+ []
 
 
-Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 371.
+Overfull \hbox (8.99174pt too wide) in paragraph at lines 321--321
+\TU/lmr/m/n/10 nifikansnivå 
+ []
 
 
-Package natbib Warning: Citation `askling2013' on page 22 undefined on input line 371.
+Overfull \hbox (3.08966pt too wide) in paragraph at lines 321--321
+[]|\TU/lmr/m/n/10 Rehabiliterings 
+ []
 
 
-Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 371.
+Overfull \hbox (3.08966pt too wide) in paragraph at lines 322--322
+[]|\TU/lmr/m/n/10 Rehabiliterings 
+ []
 
 
-Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 371.
+Overfull \hbox (37.91878pt too wide) in paragraph at lines 323--323
+[]|\TU/lmr/m/n/10 Hamilton, 
+ []
 
 
-Package natbib Warning: Citation `hickey2020' on page 22 undefined on input line 371.
+Overfull \hbox (14.29878pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 2015|  
+ []
 
 
-Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 371.
+Overfull \hbox (24.22948pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 Idrettsutø- 
+ []
 
 
-Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 371.
+Overfull \hbox (12.06947pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 PETAR 
+ []
 
 
-Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 371.
+Overfull \hbox (0.81947pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 akutt 
+ []
+
+
+Overfull \hbox (3.89948pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 dager.|  
+ []
+
+
+Overfull \hbox (8.99174pt too wide) in paragraph at lines 323--323
+\TU/lmr/m/n/10 nifikansnivå 
+ []
+
+
+Overfull \hbox (3.08966pt too wide) in paragraph at lines 323--323
+[]|\TU/lmr/m/n/10 Rehabiliterings 
+ []
+
+
+Overfull \hbox (3.08966pt too wide) in paragraph at lines 324--324
+[]|\TU/lmr/m/n/10 Rehabiliterings 
+ []
+
+
+Overfull \hbox (42.01965pt too wide) in paragraph at lines 325--325
+[]|\TU/lmr/m/n/10 Rehabiliteringsprotokoll 
+ []
+
+
+Overfull \hbox (2.84843pt too wide) in alignment at lines 312--327
+ [] [] [] [] [] [] 
+ []
+
+[19] [20] [21]
+
+Package natbib Warning: Citation `askling2013' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `askling2013' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `hickey2020' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `goel2010' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `fink2006' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `nielsen2018' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `akram2016' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `hickey2020' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 332.
+
+
+Package natbib Warning: Citation `askling2013' on page 22 undefined on input line 337.
+
+
+Package natbib Warning: Citation `askling2014' on page 22 undefined on input line 337.
+
+
+Package natbib Warning: Citation `hickey2020' on page 22 undefined on input line 337.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 22 undefined on input line 337.
+
+
+Package natbib Warning: Citation `hamilton2015' on page 22 undefined on input line 337.
 
 [22]
 
-Package natbib Warning: Citation `hickey2020' on page 23 undefined on input line 374.
+Package natbib Warning: Citation `hickey2020' on page 23 undefined on input line 340.
 
 
-Package natbib Warning: Citation `askling2013' on page 23 undefined on input line 379.
+Package natbib Warning: Citation `askling2013' on page 23 undefined on input line 345.
 
 
-Package natbib Warning: Citation `askling2014' on page 23 undefined on input line 384.
+Package natbib Warning: Citation `askling2014' on page 23 undefined on input line 350.
 
 
-Package natbib Warning: Citation `ahamid2014' on page 23 undefined on input line 389.
+Package natbib Warning: Citation `ahamid2014' on page 23 undefined on input line 355.
 
 
-Package natbib Warning: Citation `hamilton2015' on page 23 undefined on input line 394.
+Package natbib Warning: Citation `hamilton2015' on page 23 undefined on input line 360.
 
-[23] [24
+[23]
+
+Package natbib Warning: Citation `askling2013' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `askling2014' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `askling2013' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `askling2014' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `hickey2020' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `hamilton2015' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `hamilton2015' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 24 undefined on input line 367.
+
+
+Package natbib Warning: Citation `hickey2020' on page 24 undefined on input line 370.
+
+
+Package natbib Warning: Citation `askling2013' on page 24 undefined on input line 375.
+
+
+Package natbib Warning: Citation `askling2014' on page 24 undefined on input line 380.
+
+
+Package natbib Warning: Citation `ahamid2014' on page 24 undefined on input line 385.
+
+[24]
+
+Package natbib Warning: Citation `hamilton2015' on page 25 undefined on input line 390.
+
+[25] [26
 
 ]
 Chapter 5.
 
-Package natbib Warning: Citation `hickey2020' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `hickey2020' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `cirer-sastre2017' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `cirer-sastre2017' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `lovell2017' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `lovell2017' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `suetta2007' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `suetta2007' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `rhea2002' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `rhea2002' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `marshall2011' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `marshall2011' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `schoenfeld2019' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `schoenfeld2019' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `rhea2002' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `rhea2002' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `munn2005' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `munn2005' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `fröhlich2010' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `fröhlich2010' on page 27 undefined on input line 403.
 
 
-Package natbib Warning: Citation `carpinelli1998' on page 25 undefined on input line 407.
+Package natbib Warning: Citation `carpinelli1998' on page 27 undefined on input line 403.
 
-[25] [26]
+[27] [28]
 
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
@@ -1320,7 +1507,7 @@ Package fontspec Info: Font family 'Helvetica(0)' created for font 'Helvetica'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/Helvetica(0)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 446.
+(Font)              scaled to size 11.0pt on input line 442.
 
 Package fontspec Info: Helvetica scale = 0.9999973374868539.
 
@@ -1357,11 +1544,11 @@ Package fontspec Info: Font family 'Helvetica(1)' created for font 'Helvetica'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/Helvetica(1)/m/n on input line 446.
+(Font)                  TU/lmr/m/n --> TU/Helvetica(1)/m/n on input line 442.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmr/m/it --> TU/Helvetica(1)/m/it on input line 446.
+(Font)                  TU/lmr/m/it --> TU/Helvetica(1)/m/it on input line 442.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmr/bx/n --> TU/Helvetica(1)/b/n on input line 446.
+(Font)                  TU/lmr/bx/n --> TU/Helvetica(1)/b/n on input line 442.
 
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
@@ -1442,7 +1629,7 @@ Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
 File: _main_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/unnamed-chunk-9-1.pdf>
-[27]
+[29]
 
 Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
@@ -1473,7 +1660,7 @@ Package fontspec Info: Helvetica scale = 0.8272588095903724.
 
 Underfull \vbox (badness 1067) has occurred while \output is active []
 
-[28] (./_main.bbl [29] [30
+[30] (./_main.bbl [31] [32
 
 ]
 
@@ -1483,17 +1670,17 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
 Package natbib Warning: There were undefined citations.
 
-[31] (./_main.aux)
+[33] (./_main.aux)
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: D8DA8F3F4E4DA32AAFDE74A8F5EBA721;2772.
  ) 
 Here is how much of TeX's memory you used:
- 19191 strings out of 478256
- 350857 string characters out of 5854709
- 811707 words of memory out of 5000000
- 39404 multiletter control sequences out of 15000+600000
+ 19192 strings out of 478256
+ 350861 string characters out of 5854709
+ 824806 words of memory out of 5000000
+ 39405 multiletter control sequences out of 15000+600000
  410091 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,10n,128p,2614b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,7n,128p,2614b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (31 pages).
+Output written on _main.pdf (33 pages).
