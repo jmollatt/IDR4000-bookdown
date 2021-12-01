@@ -1,24 +1,14 @@
-# Parts
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
-
-Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`)
-
-Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`)
-
-Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
+# Mixed Methods
 
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(exscidata)
 data("dxadata")
 data("strengthvolume")
-
-?dxadata
-?strengthvolume
 ```
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 #UTREGNING AV PROSENTVIS ENDRING MELLOM BEIN I FETTFRI MASSE
 
@@ -37,9 +27,9 @@ dat <- dxadata %>%
   mutate(lbmleg.change = post - pre,
          pre.mc = pre - mean(pre)) %>%
   mutate(pros.change = ((post - pre) / pre) * 100) %>%
-  filter(!is.na(lbmleg.change)) %>%
+  filter(!is.na(lbmleg.change))
   
-  print()
+
 
 lbmleg <- dat %>%    
   filter(!is.na(post)) %>%
@@ -47,20 +37,13 @@ lbmleg <- dat %>%
   summarise(m = mean(pros.change),
             sd = sd(pros.change)) %>%
   mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  select(sets, meansd) %>%
-  print()
+  select(sets, meansd)
 
- 
- lbmleg$sets
- lbmleg$meansd
 
 library(lmerTest); library(lme4)
 
 m0 <- lme4::lmer(post ~ pre + sex + sets + (1|participant), data = dat)
 
-summary(m0)
-plot(m0)
-confint(m0)
 
 ##Etter å ha justert for kjønn og baselineverdier viser deltakerne i gruppen med flere sett hadde i gjennomsnitt økt muskelmassen i beina med 123,5 gram mer(SD 55.17, 95% CI), enn deltakerne i gruppen som hadde intervensjon med kun ett sett.
 
@@ -68,7 +51,7 @@ confint(m0)
 
 ```
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # UTREGNING AV PROSENTVIS ENDRING MELLOM BEINA I STYRKEØKNING
 
 strength <- strengthvolume %>%
@@ -79,25 +62,13 @@ strength <- strengthvolume %>%
   ungroup() %>%
   pivot_wider(names_from = time,
               values_from = combined.load) %>%
-  mutate(pros.change= ((post - pre) / pre) * 100) %>%
-  print()
+  mutate(pros.change= ((post - pre) / pre) * 100) 
+  
 
-strength %>%    
-  filter(!is.na(post)) %>%
-  group_by(sets) %>%
-  summarise(m = mean(pros.change),
-            sd = sd(pros.change)) %>%
-  mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  select(sets, meansd) %>%
-  print()
 
 # REGRESJONSMODELL POSTVERDIER GITT PREVERDIER OG KJØNN, FORDELT PÅ INTERVENSJON FORSKJELL I INTERVENSJON SAMMENLIGNET MED FLERSETT (ESTIMAT), SAMT KONFIDENSINTERVALL PÅ FORSKJELL.
  
 m3 <- lme4::lmer(post ~ pre + sex + sets+ (1|participant), data = strength)
-
-summary(m3)
-confint(m3)
-plot(m3)
 
 ```
 
@@ -126,7 +97,7 @@ Det ble gjennomført isokinetiske og isometriske styrketester av styrken i kneek
 
 For å sammenligne hvilken effekt styrketrening med kun ett enkeltsett kontra flere sett har på muskelstyrken i beina, og mengden muskelmasse(fettfri masse) har vi i denne studien sett på prosentvis endring fra baseline til etter intervensjon. Det har blitt regnet ut og presentert den gjennomsnittlige endringen fra baseline til etter intervensjon, med standarddavvik. De ulike intervensjonene er også sammenlignet med hjelp av en ANVOCA-modell, for å ta høyde for samvarierende variabler. Regresjonsligningen skal se på endringen etter at man tar høyde for forskjell i verdier ved pre-test og etter å ha tatt høyde for forskjell i kjønn. Det har også bitt foretatt en gjenomsnittssentrering av dataene.
 
-```{r, set_flextable_defaults(fonts_ignore=TRUE)}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # TABELL FOR ØKNING FETTFRI MASSE PRE TIL POST FORDELT PÅ INTERVENSJONSGRUPPER 
 library(kableExtra)
 library(flextable)
@@ -156,7 +127,7 @@ tabell_lbmleg
 # Deltakerne i gruppen med flere sett var det i gjennomsnitt en 3,36%(SD 4,5) økning i muskelmasse i beina fra baseline til etter intervensjon. I gruppen med enkeltsett var det i gjennomsnitt en økning på 2.05%(SD 3,6) fra baseline til etter intervensjonen var avsluttet.
 ```
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #TABELL ENDRING I MUSKELSTYRKE
 
 strength.change <- strength %>%    
@@ -190,7 +161,7 @@ tabell_strengthchange
 
 Etter å ha justert for kjønn og baselineverdier ser man at det beinet deltakerne brukte til å trene flere sett gjennomsnitt økt muskelmassen med 123,5 gram mer(SD 55.17 gram, 95% CI), enn beinet som gjennomførte kun ett sett. Gjennomsnittlig prosentvis endring i fra baselinetesting til fullført intervensjon er vist i Tabell 2`r tabell_lbmleg`.
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 plotdata <- dxadata %>%
   select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
   pivot_longer(names_to = "leg", 
