@@ -13,31 +13,31 @@ data("strengthvolume")
 #UTREGNING AV PROSENTVIS ENDRING MELLOM BEIN I FETTFRI MASSE
 
 dat <- dxadata %>%
-  select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
-  pivot_longer(names_to = "leg", 
-               values_to = "lean.legs", 
-               cols = lean.left_leg:lean.right_leg) %>%
-  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
-         sets = if_else(multiple == leg, "multiple", "single")) %>%
-  filter(include == "incl") %>%
-  select(participant, time, sex, include, sets, leg, lean.legs) %>%
+ select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
+ pivot_longer(names_to = "leg", 
+              values_to = "lean.legs", 
+              cols = lean.left_leg:lean.right_leg) %>%
+ mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+        sets = if_else(multiple == leg, "multiple", "single")) %>%
+ filter(include == "incl") %>%
+ select(participant, time, include, sex, sets, leg, lean.legs) %>%
 
-  pivot_wider(names_from = time, 
-              values_from = lean.legs) %>%
-  mutate(lbmleg.change = post - pre,
-         pre.mc = pre - mean(pre)) %>%
-  mutate(pros.change = ((post - pre) / pre) * 100) %>%
-  filter(!is.na(lbmleg.change))
-  
+ pivot_wider(names_from = time, 
+             values_from = lean.legs) %>%
+ mutate(lbmleg.change = post - pre,
+        pre.mc = pre - mean(pre)) %>%
+ mutate(pros.change = ((post - pre) / pre) * 100) %>%
+ filter(!is.na(lbmleg.change))
+ 
 
 
 lbmleg <- dat %>%    
-  filter(!is.na(post)) %>%
-  group_by(sets) %>%
-  summarise(m = mean(pros.change),
-            sd = sd(pros.change)) %>%
-  mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  select(sets, meansd)
+ filter(!is.na(post)) %>%
+ group_by(sets) %>%
+ summarise(m = mean(pros.change),
+           sd = sd(pros.change)) %>%
+ mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
+ select(sets, meansd)
 
 
 library(lmerTest); library(lme4)
