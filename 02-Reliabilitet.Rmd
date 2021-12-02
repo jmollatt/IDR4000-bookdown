@@ -98,5 +98,3 @@ Ettersom testing av maksimalt oksygenopptak er en test som gjennomføres til utm
 Grunnen til at vi snakker om typisk målefeil(TE) er at når vi ønsker å måle påvirkningen av trening på en gruppe individer er det viktig å kunne si noe om hva som er endring og hva som er støy (målefeil). Desto mindre støy en test innebærer jo bedre er målingen. Hva som danner denne variasjonen som kan observeres gjennom TE er multifaktorelt, men hoveddelen er som oftest biologisk [@hopkins2000].
 
 For å måle TE har vi brukt within subject deviation metoden. Denne metoden påvirkes ikke av at gjennomsnittet endrer seg fra test til test [@hopkins2000]. Data for målinger i V<sub>O2max</sub> fra fem sertifiserte Australske laboratorier fastslo ett gjennomsnitt på 2.2% for TE [@halperin2015]. Data fra det Australske institutt for sport har også fastslått at en TE på omtrent 2% er riktig for både maksimal og submaksimal O<sub>2</sub> [@clark2007; @robertson2010; @saunders2009]. Dette indikerer at med godt kalibrert utstyr og med utøvere som er godt vant med testingen vil en TE på 2% for det biologiske, og analytiske være riktig [@halperin2015].
-
-## Referanser

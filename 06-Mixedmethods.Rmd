@@ -27,7 +27,7 @@ dat <- dxadata %>%
  mutate(lbmleg.change = post - pre,
         pre.mc = pre - mean(pre)) %>%
  mutate(pros.change = ((post - pre) / pre) * 100) %>%
- filter(!is.na(lbmleg.change))
+filter(!is.na(lbmleg.change))
  
 
 
@@ -64,7 +64,7 @@ strength <- strengthvolume %>%
               values_from = combined.load) %>%
   mutate(pros.change= ((post - pre) / pre) * 100) 
   
-
+library(lmerTest); library(lme4)
 
 # REGRESJONSMODELL POSTVERDIER GITT PREVERDIER OG KJØNN, FORDELT PÅ INTERVENSJON FORSKJELL I INTERVENSJON SAMMENLIGNET MED FLERSETT (ESTIMAT), SAMT KONFIDENSINTERVALL PÅ FORSKJELL.
  
@@ -220,10 +220,3 @@ Videre kan det argumenteres på hvor stor forskjellen må være for at det skal 
 ## Konklusjon
 
 Etter 12 uker styrketrening så man en signifikant større fremgang i maksimal beinstyrke og mengde fettfri masse i beina gjennom å trene tre sett sammenlignet med ett sett. Det trengs ytterligere forskning for å konkludere med hvor viktig varigheten på intervensjonen har på disse forskjellene, og hvor stor rolle treningsstatus har i slike intervensjoner.
-
-#### Kommentar
-
-##### KOMMENTAR FRA DANIEL 
-
-De samme deltakerne gjennomførte begge protokoller. Hva betyr: 123,5 gram mer(SD 55.17, 95% CI)? Når du lager resultatene mer fullstendig, husk å trekke inferens på forskjell mellom treningsprotokoller og bruk deskriptiv statistikk på resterende data. Se og generell feedback på github (IDR4000-2021)
-
