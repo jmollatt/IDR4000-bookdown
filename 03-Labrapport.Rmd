@@ -170,7 +170,7 @@ fc_g1 <- results_group1 %>%
   group_by(sample)%>%
   pivot_wider(names_from = target, values_from = cq) %>%
   arrange(time) %>%
-   flextable() %>%
+   flextable()
 ```
 
 ## Diskusjon

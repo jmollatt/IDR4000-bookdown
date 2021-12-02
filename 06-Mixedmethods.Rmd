@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 
 # Mixed Methods
 
@@ -7,6 +12,7 @@
 data("dxadata")
 data("strengthvolume")
 ```
+
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
  library(tidyverse)
@@ -101,7 +107,7 @@ For å sammenligne hvilken effekt styrketrening med kun ett enkeltsett kontra fl
 
 #### Fettfri masse
  
-Etter å ha justert for kjønn og baselineverdier ser man at det beinet deltakerne brukte til å trene flere sett gjennomsnitt økt den fettfrie massen med 123,5 gram mer(SD 55.17 gram, 95% CI), enn beinet som gjennomførte kun ett sett. Gjennomsnittlig prosentvis endring i fra baselinetesting til fullført intervensjon er vist i Tabell 2.
+Etter å ha justert for kjønn og baselineverdier ser man at det beinet deltakerne brukte til å trene flere sett gjennomsnitt økt den fettfrie massen med 123,5 gram mer(1SD+-55.17 gram, 95% CI), enn beinet som gjennomførte kun ett sett. Gjennomsnittlig prosentvis endring i fra baselinetesting til fullført intervensjon er vist i Tabell 2.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # TABELL FOR ØKNING FETTFRI MASSE PRE TIL POST FORDELT PÅ SETT 
