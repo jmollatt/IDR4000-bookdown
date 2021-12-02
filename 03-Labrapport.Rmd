@@ -1,26 +1,19 @@
 
 # Labrapport - cDNA synthesis using Superscript IV and general qPCR
 
-## Bakgrunn
+## Formål
 
-RNA-overflodsanalyse er gjort ved hjelp av syntese av komplementært DNA fra enkelttrådet RNA. Vi ønsker å
-amplifisere opp bestemte proteiner ved hjelp av bestemte primere og qPCR. Vi ønsker å få frem en cQ-verdi for å kunne evaluere gen-opphopningen, og sammenlikne mål-genene med referanse gener. 
+RNA-overflodsanalyse er gjort ved hjelp av syntese av komplementært DNA fra enkelttrådet RNA. Vi ønsker å amplifisere opp bestemte proteiner ved hjelp av bestemte primere og qPCR. Vi ønsker å få frem en cQ-verdi for å kunne evaluere gen-opphopningen, og sammenlikne mål-genene med referanse gener.
 
-## Metode 
+Estimere reaksjonseffektivitet Dobler mengden målgen per syklus
 
-Estimate fold-change
-3 forsøkspersoner fra pre-test og test uke 2 (venstre ben)
-Laget fortynningsserie av cDNA 1:1, 5 ganger. Dette resulterer i fortynning 1:10, 1:50, 1:250, 1:1250, 1:6250, 1:31250, 1:156250
+## Metode
 
-Laget sju forskjellige master mixer. 3 referansegener (REEP5, CHMP2A, B2M) og 4 målgener (MyHC I, 2A, 2X, rRNA 475). 
-Mastermix bestod av: 5 µl sybr green, 1 µl valgt gen, 2 µl H2o, 2 µl fortynnet cDNA
-Fylte hver brønn med 2 µl prøve, og 8 µl med mastermix. 
-Dekke brett med plastfilm, og sentrifugere 1min på 1200rpm,  før PCR protokoll 
+3 forsøkspersoner fra pre-test og test uke 2 (venstre ben) Laget fortynningsserie av cDNA 1:1, 5 ganger. Dette resulterer i fortynning ved hjelp DEPC-behandlet vann 1:10, 1:50, 1:250, 1:1250, 1:6250, 1:31250, 1:156250. Vortex ble brukt mellom hver fortynningsfase.
 
-Estimere reaksjonseffektivitet
-Dobler mengden målgen per syklus
-Forberedt en PCR protokoll i Quant studio 5 
-50 grader i 2 min, og 95 grader i 2 min + 40 sykluser med 1 sek på 95 grader, og 30sek på 60 grader
+Laget sju forskjellige master mixer ved hjelp av 3 referansegener (REEP5, CHMP2A, B2M) og 4 målgener (MyHC I, 2A, 2X, rRNA 475). Mastermix bestod av: 5 µl sybr green, 1 µl valgt gen, 2 µl DEPC-behandlet vann , 2 µl fortynnet cDNA. Fylte hver brønn med 2 µl prøve, og 8 µl med mastermix. Dekke brett med plastfilm, og sentrifugere 1min på 1200rpm, før PCR protokoll.
+
+Forberedt en PCR protokoll i Quant studio 5 50 grader i 2 min, og 95 grader i 2 min + 40 sykluser med 1 sek på 95 grader, og 30sek på 60 grader
 
 ```{r}
 if("qpcR" %in% rownames(installed.packages()) == FALSE) install.packages("qpcR")
@@ -43,28 +36,27 @@ library(tidyverse)
 
 ## Exploring the data
 
-- Reading and analyzing qPCR-data is done in a stepwise manner using `qpcrpal`.
-- The `read_quant5` function organizes the data from the instrument (QuantStudio 5)
-- `model_qpcr` creates models of the fluorecense from each reaction
-- `analyze_models` use the information in each model to calculate summaries for each reaction.
+-   Reading and analyzing qPCR-data is done in a stepwise manner using `qpcrpal`.
+-   The `read_quant5` function organizes the data from the instrument (QuantStudio 5)
+-   `model_qpcr` creates models of the fluorecense from each reaction
+-   `analyze_models` use the information in each model to calculate summaries for each reaction.
 
-```{r}
+```{r, echo = FALSE}
 group1 <- read_quant5("./data/qpcr/IDR4000-Group1-precision.xls", skip = 47) %>%
   mutate(ID = paste0(Well, "_", ID))
 models <- model_qpcr(group1)
 results_group1 <- analyze_models(models)
 ```
 
-
-```{r, echo = FALSE, fig.caption = "An example reaction"}
+```{r, echo = FALSE, fig.caption = "Figur 1: Figuren viser sammenhengen mellom antall PCR-sykluser og fluorescence "}
 data.frame(predict(models[[1]]), cycle = 1:40) %>%
   ggplot(aes(cycle, Prediction)) +
   geom_line() +
   geom_point(data = group1 %>% filter(ID == "A1_Jacob"),
              aes(Cycle, Rn), shape = 21, fill = "red") +
-  labs(title = "Observed and modelled fluorescence per cycle",
-       subtitle = "Model: black line; Observed: red points",
-       x = "PCR cycle",
+  labs(title = "Estimert sammenheng mellom PCR-sykluser og fluorescence",
+       subtitle = "Model: sort linjer",
+       x = "PCR syklus",
        y = "Fluorescence") +
   geom_vline(xintercept = results_group1 %>%
                filter(ID == "A1_Jacob_NA_NA_MyHC2A") %>%
@@ -73,18 +65,13 @@ data.frame(predict(models[[1]]), cycle = 1:40) %>%
   annotate("text", x = 17, y = 1.9, label = "Quantification cycle (Cq)",
            hjust = 0) +
   theme_bw()
-
 ```
-
 
 ## Resultater
 
-Modellen viser sammenhengen mellom antall sykluser og fluorescence. 
-Flere PCR-sykluser gir flere kopier, og dermed også en økt konsentrasjon i prøven. 
-På denne måten kan vi bruke fluorescence til å si noe om hvor mange sykluser som må til for å oppnå en bestemt terskelverdi(Cq-verdi). 
-Med primerne vi benyttet i forsøket var det ønskelig med et sted mellom 10 og 40 sykluser for å sikre at vi oppnådde terskelverdien. Det ble derfor kjørt 40 sykluser. 
+Modellen viser sammenhengen mellom antall sykluser og fluorescence. Flere PCR-sykluser gir flere kopier, og dermed også en økt konsentrasjon i prøven. På denne måten kan vi bruke fluorescence til å si noe om hvor mange sykluser som må til for å oppnå en bestemt terskelverdi(Cq-verdi). Med primerne vi benyttet i forsøket var det ønskelig med et sted mellom 10 og 40 sykluser for å sikre at vi oppnådde terskelverdien. Det ble derfor kjørt 40 sykluser.
 
-```{r}
+```{r, echo=FALSE}
 #hvordan mengden av kopiert RNA utvikler seg med antall PCR-sykluser/Cq verdier??
 cyc.diff <- 3.327
 dat <- data.frame(concentration = c(1, 1/10, 1/100, 1/1000, 1/10000, 1/100000), 
@@ -100,14 +87,10 @@ dat %>%
   geom_point() + geom_smooth(method = "lm") + 
   theme_bw() + 
   annotate("text", x = 15, y = -3, hjust = 0, label = "Efficiency factor ~ 2\n when slope ~ 3.3")
-
 ```
 
-
 ```{r, echo = FALSE, warning = FALSE, fig.cap = "Efficiency calculations made from serial dilution of cDNA"}
-
 #konsekvente tall fra referansegen som vist i modellen?
-
 group1 <- read_quant5("./data/qpcr/group1-efficiency.xls", skip = 47) %>%
   mutate(ID = paste0(Well, "_", ID))
 models1 <- model_qpcr(group1)
@@ -161,7 +144,7 @@ efficiency_est_data <- bind_rows(eff_g1, eff_g2, eff_g3) %>%
   mutate(target = toupper(target)) %>%
   filter(cq > 10 & cq < 39) 
   
-saveRDS(efficiency_est_data, "./data/efficiency-estimate-data.RDS")
+saveRDS(efficiency_est_data, "./data/qpcr/efficiency-estimate-data.RDS")
   
 ### Create a figure with all data
  efficiency_est_data %>% 
@@ -172,10 +155,9 @@ saveRDS(efficiency_est_data, "./data/efficiency-estimate-data.RDS")
         color = "Target", 
         fill = "Target") +
    theme_bw()
-
 ```
 
-```{r}
+```{r, echo=FALSE}
  # Create models and extract the second coefficient from each model (the slope)
 b2m_slope <- coef(lm(cq ~ log10(concentration), data = filter(efficiency_est_data, target == "B2M")))[2]
 reep5_slope <- coef(lm(cq ~ log10(concentration), data = filter(efficiency_est_data, target == "REEP5")))[2]
@@ -185,9 +167,9 @@ efficiency_estimates <- data.frame(target = c("B2M", "REEP5"),
                           10^-(1/reep5_slope)))
 ```
 
-
-```{r}
+```{r cqtabell, tab.cap= "Tabellen viser cq-verider"}
 ## Estimerte cq verdier? 
+library(flextable)
 fc_g1 <- results_group1 %>%
   separate(ID, into = c("well", "sample", "subsample", "time", "target")) %>%
   dplyr::select(well:target, cq = cpD2) %>%
@@ -195,56 +177,13 @@ fc_g1 <- results_group1 %>%
   dplyr::select(sample, time, target, cq) %>%
   mutate(target = toupper(target), 
          target = gsub("RRNA475", "RRNA47S", target)) %>%
+  group_by(sample)%>%
+  pivot_wider(names_from = target, values_from = cq) %>%
+  arrange(time) %>%
+   flextable() %>%
   print()
-fc_g2 <- results_group2 %>%
-  separate(ID, into = c("well", "sample", "time", "na", "target")) %>%
-  dplyr::select(well:target, cq = cpD2) %>%
-  filter(sample %in% c("FP1", "FP2", "FP3")) %>%
-  mutate(target = toupper(target), 
-         target = if_else(target %in% c("2A", "2X"), paste0("MYHC", target),
-                 if_else(target == "RNA475", "RRNA47S", target))) %>%
-  dplyr::select(sample, time, target, cq) %>%
-  print()
-  
-fc_g3 <- results_group3 %>%
-  separate(ID, into = c("well", "sample", "conc", "target", "na")) %>%
-  dplyr::select(well:target, cq = cpD2) %>%
-  filter(sample %in% c("fp1", "fp2", "fp3")) %>%
-  mutate(sample = toupper(sample), 
-         target = toupper(target), 
-         target = if_else(target == "MYC2A", "MYHC2A", 
-                          if_else(target == "MYC2X", "MYHC2X",
-                                  if_else(target == "RRNA475", "RRNA47S", 
-                                          if_else(target == "MYCH1", "MYHC1", 
-                                          target)))) , 
-         time = toupper(conc)) %>%
-  dplyr::select(sample, time, target, cq) %>%
-                         
-  print()
-fc_data <- bind_rows(fc_g1, 
-          fc_g2, 
-          fc_g3) %>%
-  print()
-unique(fc_data$target)
-
 ```
 
-```{r}
-library(kableExtra)
-library(flextable)
-cqtabell <- fc_data %>%
-select(sample, time, target, cq) %>% 
-  pivot_wider(names_from = target,
-              values_from = cq ) %>%
-   flextable()
-  
-```
+## Diskusjon
 
-
-
-## Diskusjon 
-
-Cq-verdien sier noe om hvor mange PCR-sykluser som trengs for å detektere ulike targets.En høyere Cq-verdi indikerer altså at mengden RNA må dobles flere ganger for å detektere en terskelverdi av target. En lavere Cq-verdi indikerer at terskelverdien oppnås ved færre PCR-sykluser, altså at konsentrasjonen av target er høyere. En lavere Cq-verdi ved uke 2, sammenlignet med uke 0(baseline) som i forsøket, indikerer høyere konsentrasjon ved uke 2 enn ved uke 0. (Dermed en effekt av intervensjonen, avhengig av funksjonen til target - gen). 
-
-
-
+Cq-verdien sier noe om hvor mange PCR-sykluser som trengs for å detektere ulike targets[@kuang2018] .En høyere Cq-verdi indikerer altså at mengden RNA må dobles flere ganger for å detektere en terskelverdi av target. En lavere Cq-verdi indikerer at terskelverdien oppnås ved færre PCR-sykluser, altså at konsentrasjonen av target er høyere. En lavere Cq-verdi ved uke 2, sammenlignet med uke 0(baseline) som i forsøket, indikerer høyere konsentrasjon ved uke 2 enn ved uke 0. (Dermed en effekt av intervensjonen, avhengig av funksjonen til target - gen).

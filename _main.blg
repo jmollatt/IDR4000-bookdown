@@ -3,86 +3,73 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: _main.aux
 The style file: plainnat.bst
 Database file #1: book.bib
-Database file #2: packages.bib
-Warning--I didn't find a database entry for "bassett2000"
-Warning--I didn't find a database entry for "hill1923"
-Warning--I didn't find a database entry for "tønnessen2017"
-Warning--I didn't find a database entry for "halperin2015"
-Warning--I didn't find a database entry for "borg1982"
-Warning--I didn't find a database entry for "hopkins2000"
-Warning--I didn't find a database entry for "clark2007"
-Warning--I didn't find a database entry for "robertson2010"
-Warning--I didn't find a database entry for "saunders2009"
-Warning--I didn't find a database entry for "ekstrand2011"
-Warning--I didn't find a database entry for "hickey2014"
-Warning--I didn't find a database entry for "eirale2013"
-Warning--I didn't find a database entry for "hickey2020"
-Warning--I didn't find a database entry for "askling2014"
-Warning--I didn't find a database entry for "hamilton2015"
-Warning--I didn't find a database entry for "ahamid2014"
-Warning--I didn't find a database entry for "askling2013"
-Warning--I didn't find a database entry for "brooks2006"
-Warning--I didn't find a database entry for "horst2017"
-Warning--I didn't find a database entry for "opar2012"
-Warning--I didn't find a database entry for "podlog2014"
-Warning--I didn't find a database entry for "hulley2013"
-Warning--I didn't find a database entry for "hulley2017"
-Warning--I didn't find a database entry for "jones2004"
-Warning--I didn't find a database entry for "turner2018"
-Warning--I didn't find a database entry for "goel2010"
-Warning--I didn't find a database entry for "fink2006"
-Warning--I didn't find a database entry for "nielsen2018"
-Warning--I didn't find a database entry for "akram2016"
-Warning--I didn't find a database entry for "cirer-sastre2017"
-Warning--I didn't find a database entry for "lovell2017"
-Warning--I didn't find a database entry for "suetta2007"
-Warning--I didn't find a database entry for "rhea2002"
-Warning--I didn't find a database entry for "marshall2011"
-Warning--I didn't find a database entry for "schoenfeld2019"
-Warning--I didn't find a database entry for "munn2005"
-Warning--I didn't find a database entry for "fröhlich2010"
-Warning--I didn't find a database entry for "carpinelli1998"
-Warning--I didn't find a database entry for "radaelli2014"
-Warning--I didn't find a database entry for "hass2000"
-You've used 0 entries,
+Warning--empty journal in akram2016
+Warning--empty year in akram2016
+Warning--empty year in akram2016
+Warning--empty journal in cirer-sastre2017
+Warning--empty year in cirer-sastre2017
+Warning--empty year in cirer-sastre2017
+Warning--empty journal in fink2006
+Warning--empty year in fink2006
+Warning--empty year in fink2006
+Warning--empty journal in goel2010
+Warning--empty year in goel2010
+Warning--empty year in goel2010
+Warning--empty journal in jones2003
+Warning--empty year in jones2003
+Warning--empty year in jones2003
+Warning--empty journal in lovell2016
+Warning--empty year in lovell2016
+Warning--empty year in lovell2016
+Warning--empty journal in nielsen2019
+Warning--empty year in nielsen2019
+Warning--empty year in nielsen2019
+Warning--empty journal in suetta2007
+Warning--empty year in suetta2007
+Warning--empty year in suetta2007
+Warning--empty journal in turner2018
+Warning--empty year in turner2018
+Warning--empty year in turner2018
+Warning--empty journal in tønnessen2017
+You've used 39 entries,
             2773 wiz_defined-function locations,
-            633 strings with 5263 characters,
-and the built_in function-call counts, 33 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 10
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+            908 strings with 15704 characters,
+and the built_in function-call counts, 22815 in all, are:
+= -- 2092
+> -- 1552
+< -- 8
++ -- 519
+- -- 480
+* -- 2254
+:= -- 3586
+add.period$ -- 196
+call.type$ -- 39
+change.case$ -- 277
+chr.to.int$ -- 39
+cite$ -- 106
+duplicate$ -- 812
+empty$ -- 1586
+format.name$ -- 529
+if$ -- 4612
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 39
+newline$ -- 282
+num.names$ -- 157
+pop$ -- 468
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 238
 quote$ -- 0
-skip$ -- 1
+skip$ -- 578
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 1015
+swap$ -- 55
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 424
+warning$ -- 28
+while$ -- 188
 width$ -- 0
-write$ -- 7
-(There were 40 warnings)
+write$ -- 653
+(There were 28 warnings)
