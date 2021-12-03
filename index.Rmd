@@ -1,6 +1,6 @@
 --- 
 title: "Mappeeksamen"
-author: "Jacob Mollatt - Kandidatnummer 109"
+author: "Jacob Mollatt - Kandidatnummer 109 - https://github.com/jmollatt/IDR4000-bookdown.git"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
