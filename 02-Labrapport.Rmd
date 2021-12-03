@@ -12,7 +12,7 @@ Det ble derreter laget sju forskjellige master mixer ved hjelp av 3 referansegen
 
 En PCR protokoll ble på forhånd forberedet i QuantStudio5. PCR protokollen bestod av 50 grader i 2 minutter, og 95 grader i 2 minutter, før den kjørte 40 sykluser bestående av 1 sekund på 95 grader celsius, og 30 sekunder på 60 grader celsius.
 
-```{r, echo=FALSE}
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
 if("qpcR" %in% rownames(installed.packages()) == FALSE) install.packages("qpcR")
 if("readxl" %in% rownames(installed.packages()) == FALSE) install.packages("readxl")
 if("parallel" %in% rownames(installed.packages()) == FALSE) install.packages("parallel")
@@ -31,7 +31,7 @@ library(qpcrpal)
 library(tidyverse)
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning=FALSE}
 group1 <- read_quant5("./data/qpcr/IDR4000-Group1-precision.xls", skip = 47) %>%
   mutate(ID = paste0(Well, "_", ID))
 models <- model_qpcr(group1)
@@ -61,7 +61,7 @@ data.frame(predict(models[[1]]), cycle = 1:40) %>%
 
 Modellen viser sammenhengen mellom antall sykluser og fluorescence. Flere PCR-sykluser gir flere kopier, og dermed også en økt konsentrasjon i prøven. På denne måten kan vi bruke fluorescence til å si noe om hvor mange sykluser som må til for å oppnå en bestemt terskelverdi(Cq-verdi). Med primerne vi benyttet i forsøket var det ønskelig med et sted mellom 10 og 40 sykluser for å sikre at vi oppnådde terskelverdien. Det ble derfor kjørt 40 sykluser.Ved flere sykluser øker trolig sannsynligheten for falske positive.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 #hvordan mengden av kopiert RNA utvikler seg med antall PCR-sykluser/Cq verdier??
 cyc.diff <- 3.327
 dat <- data.frame(concentration = c(1, 1/10, 1/100, 1/1000, 1/10000, 1/100000), 
@@ -77,6 +77,8 @@ dat %>%
   geom_point() + geom_smooth(method = "lm") + 
   theme_bw() + 
   annotate("text", x = 15, y = -3, hjust = 0, label = "Effektivitetsfaktor ~ 2\n gitt slope ~ 3.3")
+
+
 ```
 
 ```{r, echo = FALSE, warning = FALSE, fig.cap = "Efficiency calculations made from serial dilution of cDNA"}
@@ -147,7 +149,7 @@ saveRDS(efficiency_est_data, "./data/qpcr/efficiency-estimate-data.RDS")
    theme_bw()
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
  # Create models and extract the second coefficient from each model (the slope)
 b2m_slope <- coef(lm(cq ~ log10(concentration), data = filter(efficiency_est_data, target == "B2M")))[2]
 reep5_slope <- coef(lm(cq ~ log10(concentration), data = filter(efficiency_est_data, target == "REEP5")))[2]
@@ -157,7 +159,7 @@ efficiency_estimates <- data.frame(target = c("B2M", "REEP5"),
                           10^-(1/reep5_slope)))
 ```
 
-```{r, echo=FALSE, cqtabell, tab.cap= "Tabellen viser cq-verdier"}
+```{r, echo=FALSE, warning=FALSE, cqtabell, tab.cap= "Tabellen viser cq-verdier"}
 ## Estimerte cq verdier? 
 library(flextable)
 fc_g1 <- results_group1 %>%

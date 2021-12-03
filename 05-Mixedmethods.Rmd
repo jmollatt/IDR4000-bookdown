@@ -19,14 +19,14 @@ data("strengthvolume")
 #UTREGNING AV PROSENTVIS ENDRING MELLOM BEIN I FETTFRI MASSE
 
 dat <- dxadata %>%
- select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
+ dplyr::select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
  pivot_longer(names_to = "leg", 
               values_to = "lean.legs", 
               cols = lean.left_leg:lean.right_leg) %>%
  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
         sets = if_else(multiple == leg, "multiple", "single")) %>%
  filter(include == "incl") %>%
- select(participant, time, include, sex, sets, leg, lean.legs) %>%
+ dplyr::select(participant, time, include, sex, sets, leg, lean.legs) %>%
 
  pivot_wider(names_from = time, 
              values_from = lean.legs) %>%
@@ -43,7 +43,7 @@ lbmleg <- dat %>%
  summarise(m = mean(pros.change),
            sd = sd(pros.change)) %>%
  mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
- select(sets, meansd)
+ dplyr::select(sets, meansd)
 
 
 library(lmerTest); library(lme4)
@@ -120,13 +120,13 @@ lbmleg <- dat %>%
   summarise(m = mean(pros.change),
             sd = sd(pros.change)) %>%
   mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  select(sets, meansd)
+  dplyr::select(sets, meansd)
   
   
 tabell_lbmleg <- lbmleg %>%
 mutate(sets = factor(sets, levels = c("multiple", "single"), 
                         labels = c("Flersett", "Enkeltsett"))) %>%
-  select(sets, meansd) %>%
+  dplyr::select(sets, meansd) %>%
   arrange(sets) %>%
    flextable()  %>%
   set_header_labels(sets = " ",
@@ -140,13 +140,13 @@ tabell_lbmleg
 ```
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap= "Figur 1 viser forskjell i fettfri masse fra pre-test til post-test for samtlige deltakere fordelt på kjønn"}
 plotdata <- dxadata %>%
-  select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
+  dplyr::select(participant:include, sex, lean.left_leg, lean.right_leg) %>%
   pivot_longer(names_to = "leg", 
                values_to = "lean.legs", 
                cols = lean.left_leg:lean.right_leg) %>%
   mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
          sets = if_else(multiple == leg, "multiple", "single")) %>%
-  select(participant, time, sets, sex, leg, lean.legs) %>%
+  dplyr::select(participant, time, sets, sex, leg, lean.legs) %>%
   group_by(participant) %>%
   mutate(n = n(), group = factor(sets, levels = c("single", "multiple")), time = factor(time, levels = c("pre", "post")))
 plotdata %>%
@@ -172,13 +172,13 @@ strength.change <- strength %>%
   summarise(m = mean(pros.change),
             sd = sd(pros.change)) %>%
   mutate(meansd= paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
-  select(sets, meansd)
+  dplyr::select(sets, meansd)
   
   
 tabell_strengthchange <- strength.change %>%
 mutate(sets = factor(sets, levels = c("multiple", "single"), 
                         labels = c("Flersett", "Enkeltsett"))) %>%
-  select(sets, meansd) %>%
+  dplyr::select(sets, meansd) %>%
   arrange(sets) %>%
    flextable()  %>%
   set_header_labels(sets = " ",
